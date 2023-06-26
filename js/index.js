@@ -23,7 +23,7 @@ function typeText() {
 }
 
 // Call the typeText function every 100 milliseconds for the typing effect
-// var typingInterval = setInterval(typeText, 150);
+var typingInterval = setInterval(typeText, 150);
 
 // const readMoreBtn = document.querySelector(".read-more-btn");
 // const text2 = document.querySelector(".text");
