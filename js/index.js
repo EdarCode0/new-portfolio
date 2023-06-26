@@ -23,16 +23,16 @@ function typeText() {
 }
 
 // Call the typeText function every 100 milliseconds for the typing effect
-var typingInterval = setInterval(typeText, 150);
+// var typingInterval = setInterval(typeText, 150);
 
-const readMoreBtn = document.querySelector(".read-more-btn");
-const text2 = document.querySelector(".text");
+// const readMoreBtn = document.querySelector(".read-more-btn");
+// const text2 = document.querySelector(".text");
 
-readMoreBtn.addEventListener("click", (e) => {
-  text2.classList.toggle("show-more");
-  if (readMoreBtn.innerText === "Read More") {
-    readMoreBtn.innerText = "Read Less";
-  } else {
-    readMoreBtn.innerText = "Read More";
-  }
-});
+// readMoreBtn.addEventListener("click", (e) => {
+//   text2.classList.toggle("show-more");
+//   if (readMoreBtn.innerText === "Read More") {
+//     readMoreBtn.innerText = "Read Less";
+//   } else {
+//     readMoreBtn.innerText = "Read More";
+//   }
+// });
