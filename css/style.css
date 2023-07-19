@@ -110,7 +110,165 @@ body {
   font-weight: 400 !important;
 }
 
-.hero {
+@keyframes charge {
+  from {
+      transform: translateY(2rem);
+      opacity: 0
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1
+  }
+
+}
+
+
+@keyframes wave {
+  from {
+      transform: rotate(0deg)
+  }
+
+  to {
+      transform: rotate(360deg)
+  }
+}
+
+
+.content {
+  color: #fff;
+  font-weight: 300;
+  padding: 0 2rem
+}
+
+.content,
+.footer {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.code,
+.content,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.code,
+.content {
+  flex-direction: column
+}
+
+.footer {
+  flex-wrap: wrap;
+  max-width: 600px;
+  opacity: 0;
+  animation: charge .5s .5s forwards
+}
+
+.subtitle,
+.title {
+  margin: 0
+}
+
+.footer a {
+  text-decoration: none;
+  width: 40%;
+  padding: 12px 18px;
+  font-size: 16px;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 99em;
+  outline: none;
+  transition: all .3s
+}
+
+.footer a:hover {
+  background-color: #fff;
+  color: #222;
+  border-color: #fff;
+}
+
+.subtitle,
+.text,
+.title {
+  backface-visibility: hidden;
+}
+
+.title {
+  font-size: 6.4rem;
+  font-weight: 400;
+  opacity: 0;
+  animation: charge .5s forwards
+}
+
+.text {
+  max-width: 50rem;
+  font-weight: 400;
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, .9);
+  opacity: 0;
+  animation: charge .5s .3s forwards
+}
+
+.wave {
+  opacity: .6;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  width: 6000px;
+  height: 6000px;
+  margin-left: -3000px;
+  transform-origin: 50% 48%;
+  border-radius: 46%;
+  animation: wave 12s infinite linear;
+  pointer-events: none
+}
+
+.wave2 {
+  animation: wave 28s infinite linear;
+  opacity: .3
+}
+
+.wave3 {
+  animation: wave 20s infinite linear;
+  opacity: .1
+}
+
+.wave {
+  background: #000
+}
+
+.code {
+  position: relative;
+  background-color: #939aa1;
+  z-index: 999
+}
+
+.ripple {
+  background-position: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #37474F radial-gradient(circle, transparent 1%, #263238 1%) center/15000%;
+}
+
+
+.ripple:active {
+  background-color: #37474F;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.content {
   position: relative;
   height: 100vh;
   color: aliceblue;
@@ -118,20 +276,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero:before {
-  content: "";
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/wallpapersden.com_abstract-shapes-2021-minimalist_1921x1081.jpg") no-repeat center center/cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.hero-inner {
-  position: relative;
-  height: 100%;
 }
 
 .hero-text {
@@ -7089,14 +7233,6 @@ fieldset:disabled .btn {
   background-size: 100% 100%;
 }
 
-/* rtl:options: {
-  "autoRename": true,
-  "stringMap":[ {
-    "name"    : "prev-next",
-    "search"  : "prev",
-    "replace" : "next"
-  } ]
-} */
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
@@ -7379,14 +7515,19 @@ fieldset:disabled .btn {
     transition: transform 0.3s ease-in-out;
   }
 
-  .hero-text h1 {
+  /* .hero-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+  } */
+
+  .title {
     font-size: 1.8rem;
     font-weight: 600;
+
   }
-  
-  .hero-text p {
-    font-size: 1.5rem;
-    font-weight: 500;
+
+  .code {
+    text-align: center;
   }
 
   .more {

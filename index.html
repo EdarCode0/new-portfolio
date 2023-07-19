@@ -21,49 +21,50 @@
 <body>
     <!-- Header-->
     <section id="header-page">
-        <header class="py-5 hero">
-            <!-- Responsive navbar-->
-            <div class="hero-inner">
-
-                <div class="hero-text">
-                    <h1 class="hello">Hello <span class="auto-type" id="auto-type"></span></h1>
-                    <p>
-                        Book your Time
-                    </p>
-                    <a class="btn" type="button" href="#contact">CONTACT US</a>
+        <div class='code'>
+            <header class='py-5 content'>
+                <h1 class='title'>Hello <span class="auto-type" id="auto-type"></span></h1>
+                <!-- <div class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptas, minus dolor et
+                    dolores doloremque nisi non dolorem natus iusto sequi quasi unde sunt libero nemo necessitatibus vel
+                    animi quae.</div> -->
+                    <footer class='footer'>
+                        <a class='ripple text-center' href="#contact">CONTACT US</a>
+                    </footer>
+            </header>
+            <div class='wave'></div>
+            <div class='wave wave2'></div>
+            <div class='wave wave3'></div>
+        </div>
+        <nav class="navbar navbar-expand-lg fixed-top" id="nav1">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#header-page"
+                                onclick="closeNavbar()">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Services
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#technologies" onclick="closeNavbar()">Technologies</a></li>
+                              <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">What we offer</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">Projects</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg fixed-top" id="nav1">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#header-page"
-                                    onclick="closeNavbar()">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#technologies" onclick="closeNavbar()">Technologies</a></li>
-                                  <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">What we offer</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">Projects</a></li>
-                                </ul>
-                              </li>
-                            <li class="nav-item"><a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        </nav>
     </section>
 
     <!-- About section-->
