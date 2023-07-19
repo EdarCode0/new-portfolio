@@ -19,25 +19,46 @@
 </head>
 
 <body>
+    
     <!-- Header-->
     <section id="header-page">
         <div class='code'>
             <header class='py-5 content'>
-                <h1 class='title'>Hello <span class="auto-type" id="auto-type"></span></h1>
+                <!-- <img class="banner" src="assets/logo.png" class="text-center" width="500px" height="500px" alt="">
+                <h1 class='title'>Hello <span class="auto-type" id="auto-type"></span></h1> -->
+                <div class="ball">
+                    <img class="banner" src="assets/logo.png" class="text-center" width="500px" height="500px" alt="">
+                </div>
+                <div class="shadow"></div>
                 <!-- <div class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptas, minus dolor et
                     dolores doloremque nisi non dolorem natus iusto sequi quasi unde sunt libero nemo necessitatibus vel
                     animi quae.</div> -->
-                    <footer class='footer'>
-                        <a class='ripple text-center' href="#contact">CONTACT US</a>
-                    </footer>
+                <footer class='footer'>
+                    <a class='ripple text-center' href="#contact">CONTACT US</a>
+                </footer>
             </header>
-            <div class='wave'></div>
-            <div class='wave wave2'></div>
-            <div class='wave wave3'></div>
         </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
         <nav class="navbar navbar-expand-lg fixed-top" id="nav1">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" href="#!"><img src="assets/logo.png" width="100px" height="100px" alt=""></a>
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
@@ -49,16 +70,21 @@
                         <li class="nav-item"><a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Services
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#technologies" onclick="closeNavbar()">Technologies</a></li>
-                              <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">What we offer</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">Projects</a></li>
+                                <li><a class="dropdown-item" href="#technologies"
+                                        onclick="closeNavbar()">Technologies</a></li>
+                                <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">What we offer</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#services" onclick="closeNavbar()">Projects</a></li>
                             </ul>
-                          </li>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a>
                         </li>
                     </ul>
@@ -81,44 +107,13 @@
                             roots in a piece of classical Latin literature from 45 BC, making it over 2000
                             years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
                             Virginia...</p>
-                        <a class="read-more-btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Read More &rarr;</a>
+                        <!-- <a class="read-more-btn" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Read More &rarr;</a> -->
+                              
                     </div>
                     <div class="image">
                         <div>
                             <img class="about-image" src="assets/Home-office-makeover.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <i>
-                                <p class="p-modal" id="p-modal">Contrary to popular belief, Lorem Ipsum is not simply
-                                    random text. It has
-                                    roots in a piece of classical Latin literature from 45 BC, making it over 2000
-                                    years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                                    Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                                    Lorem Ipsum passage, and going through the cites of the word in classical
-                                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-                                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
-                                    and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
-                                    of ethics, very popular during the Renaissance....
-                                    The first line of Lorem Ipsum,
-                                    "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The
-                                    standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
-                                    those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-                                    Malorum" by Cicero are also reproduced in their exact original form,
-                                    accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                            </i>
                         </div>
                     </div>
                 </div>
