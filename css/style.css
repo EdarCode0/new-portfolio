@@ -4737,6 +4737,7 @@ fieldset:disabled .btn {
 
 .title-text {
   font-size: 45px;
+  margin-top: 20px;
 }
 
 .projejct-title {
@@ -13191,7 +13192,7 @@ Navbar
   color: #ddd;
   /* background-color: #474e5d; */
   font-family: 'VT323', monospace;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   background: hsl(0deg 0% 13.39%);
   padding: 50px;
   text-align: center;
