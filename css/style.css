@@ -171,16 +171,15 @@ body {
   padding: 0 2rem
 }
 
-.content,
-.footer {
-  width: 100%;
-  position: relative;
-  z-index: 100;
-}
-
 .code,
 .content,
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.footer-contact {
   display: flex;
   align-items: center;
   justify-content: center
@@ -196,7 +195,13 @@ body {
   max-width: 500px;
   opacity: 0;
   animation: charge .5s .5s forwards
-}
+} 
+.footer-contact {
+  flex-wrap: wrap;
+  max-width: 500px;
+  opacity: 0;
+  animation: charge .5s .5s forwards
+} 
 
 .subtitle,
 .title {
@@ -210,16 +215,55 @@ body {
   /* font-size: 16px; */
   margin: 20px auto 0 auto;
   cursor: pointer;
+  border: 2px solid;
+  border-radius: 27px;
+  width: 250px;
+  outline: none;
+  transition: all .3s
+}
+
+.footer-contact a {
+  text-decoration: none;
+  width: 40%;
+  padding: 12px 18px;
+  /* font-size: 16px; */
+  margin: 20px auto 0 auto;
+  cursor: pointer;
   color: #fff;
   border: 2px solid;
-  border-radius: 99em;
+  border-radius: 27px;
+  width: 250px;
   outline: none;
   transition: all .3s
 }
 
 .footer a:hover {
-  background-color: #fff;
-  color: #222;
+  background-color: transparent;
+  border-color: #fff;
+}
+.footer-contact a:hover {
+  background-color: #AAE979;
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer a:hover h3 {
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer-contact a:hover h3 {
+  color: #000;
+  border-color: #fff;
+}
+
+.footer:hover ~ .footer-contact a {
+  background-color: #AAE979;
+  border-color: #fff;
+}
+
+.footer-contact:hover ~ .footer a{
+  background-color: transparent;
   border-color: #fff;
 }
 
@@ -249,11 +293,8 @@ body {
 
 .code {
   position: relative;
-  background: radial-gradient(circle at 75% 30%,
-      /* white 5px, */
-      rgb(90, 68, 68) 8%,
-      rgb(46, 41, 41) 100%);
-  z-index: 999
+  background: url('/assets/background.web.png');
+  z-index: 999; 
 }
 
 .ripple {
@@ -262,22 +303,39 @@ body {
   font-weight: 600;
   font-size: 200px;
   transition: background 0.8s;
+  background-color: #AAE979;
+
+} 
+
+.ripple-contact {
+  background-position: center;
+    font-family: 'VT323', monospace;
+  font-weight: 200;
+  /* font-size: 200px; */
+  transition: background 0.8s;
+  background-color: transparent;
 }
 
 .ripple-text {
   margin-top: 5px;
+  color: #000;
 }
 
-.ripple:hover {
+h3 .ripple-contact {
+  margin-top: 5px;
+  color: #fff;
+} 
+
+/* .ripple:hover {
   background: #37474F radial-gradient(circle, transparent 1%, #263238 1%) center/15000%;
-}
+} */
 
 
-.ripple:active {
+/* .ripple:active {
   background-color: #37474F;
   background-size: 100%;
   transition: background 0s;
-}
+} */
 
 .content {
   position: relative;
@@ -8542,10 +8600,6 @@ fieldset:disabled .btn {
 
 .d-none {
   display: none !important;
-}
-
-.shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .shadow-sm {
