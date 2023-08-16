@@ -120,49 +120,58 @@ body {
   /* Adjust the negative margin to remove the white space */
 }
 
-.about-us{
-  height: 100vh;
+.about-us {
+  height: 80vh;
   width: 100%;
   padding: 90px 0;
-  background: rgb(2, 32, 41);
+  background: #0e151d;
+  font-family: 'VT323', monospace;
+  color: #fff;
 }
-.pic{
-  height: 500px;
-  width:  600px;
+
+.lead {
+  font-family: 'VT323', monospace;
 }
-.about{
-  width: 1130px;
-  max-width: 85%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.text{
+
+.text {
   width: 540px;
 }
-.text h2{
+
+.read-more {
+  background: #AAE979 !important;
+}
+
+.read-more:hover {
+  background: transparent !important;
+}
+
+.text h2 {
   font-size: 90px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.text h5{
+
+.text h5 {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-span{
+
+span {
   color: #AAE979;
 }
-.text p{
+
+.text p {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-.data{
+
+.data {
   margin-top: 30px;
 }
-.hire{
+
+.hire {
   font-size: 18px;
   background: #4070f4;
   color: #fff;
@@ -172,7 +181,8 @@ span{
   border-radius: 6px;
   transition: 0.5s;
 }
-.hire:hover{
+
+.hire:hover {
   background: #000;
   border: 1px solid #4070f4;
 }
@@ -216,24 +226,7 @@ span{
 
 }
 
-.content {
-  color: #fff;
-  font-weight: 300;
-  padding: 0 2rem
-}
 
-.code,
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-
-.code,
-.content {
-  flex-direction: column
-}
 
 .subtitle,
 .title {
@@ -278,13 +271,14 @@ span{
   font-size: 1.3rem;
   color: rgba(255, 255, 255, .9);
   opacity: 0;
-  animation: charge .5s .3s forwards
+  animation: charge .5s .3s forwards;
+  font-family: 'VT323', monospace;
 }
 
 .code {
   position: relative;
   background: url('/assets/background.web.png');
-  z-index: 999; 
+  z-index: 999;
 }
 
 .ripple {
@@ -295,11 +289,11 @@ span{
   transition: background 0.8s;
   background-color: #AAE979;
 
-} 
+}
 
 .ripple-contact {
   background-position: center;
-    font-family: 'VT323', monospace;
+  font-family: 'VT323', monospace;
   font-weight: 200;
   /* font-size: 200px; */
   transition: background 0.8s;
@@ -314,7 +308,7 @@ span{
 h3 .ripple-contact {
   margin-top: 5px;
   color: #fff;
-} 
+}
 
 /* .ripple:hover {
   background: #37474F radial-gradient(circle, transparent 1%, #263238 1%) center/15000%;
@@ -407,8 +401,7 @@ body.modal-open .background-container {
   font-weight: 600;
 }
 
-.text {
-  padding: 1.5em;
+.text-skewed {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
@@ -418,7 +411,7 @@ body.modal-open .background-container {
   font-size: 18px;
   font-family: 'VT323', monospace;
   font-size: 28px;
-
+  /* margin-left: 150px !important; */
 }
 
 .image {
@@ -1214,9 +1207,9 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  /* margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x)); */
 }
 
 .row>* {
@@ -7590,13 +7583,19 @@ fieldset:disabled .btn {
     font-size: 23px;
   }
 
-  .code {
-    text-align: center;
+  .pic {
+    display: none;
   }
 
-  .header-container {
-    
+  .about {
+    font-size: 30px !important;
   }
+
+  .about-desc {
+    font-size: 10px !important;
+  }
+
+  .header-container {}
 
   .p-desc {
     font-weight: 200;
@@ -9869,10 +9868,16 @@ fieldset:disabled .btn {
 .rounded-start {
   border-bottom-left-radius: var(--bs-border-radius) !important;
   border-top-left-radius: var(--bs-border-radius) !important;
+  width: 100%;
 }
 
 .visible {
   visibility: visible !important;
+}
+
+.for-image {
+  margin: 25px;
+  margin-bottom: 0px;
 }
 
 .invisible {
@@ -13240,10 +13245,10 @@ Navbar
   font-family: 'VT323', monospace;
   font-size: 45px;
   padding-bottom: 50px;
-} 
+}
 
 .tech {
-  background-color: hsl(0deg 0% 13.39%);
+  background: #0e151d;
   color: #fff;
 }
 
@@ -13384,3 +13389,4 @@ Navbar
     }
   }
 }
+
