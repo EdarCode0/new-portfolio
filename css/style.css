@@ -126,6 +126,11 @@ body {
   padding: 90px 0;
   background: rgb(2, 32, 41);
 }
+
+.p-desc {
+  width: 50%;
+}
+
 .pic{
   height: 500px;
   width:  600px;
@@ -196,6 +201,11 @@ span{
   font-size: 40px;
 }
 
+.contact {
+  background: #AAE979 !important;
+  color: #000 !important;
+}
+
 .nav-link {
   color: #fff !important;
   /* font-family: "Montserrat", sans-serif !important; */
@@ -250,6 +260,7 @@ span{
 .contact:hover {
   background-color: transparent !important;
   border-color: #fff;
+  color: #fff !important;
 }
 
 .learn:hover {
@@ -7565,7 +7576,7 @@ fieldset:disabled .btn {
     transition: transform 0.3s ease-in-out;
   }
 
-  .for-image {
+  .rounded-start {
     display: none;
   }
 
@@ -7598,10 +7609,6 @@ fieldset:disabled .btn {
     
   }
 
-  .p-desc {
-    font-weight: 200;
-    font-size: 15px !important;
-  }
 
   .banner {
     width: 250px;
