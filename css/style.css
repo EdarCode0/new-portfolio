@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,300&family=VT323&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 /*!
 * Start Bootstrap - Business Frontpage v5.0.9 (https://startbootstrap.com/template/business-frontpage)
@@ -121,13 +122,17 @@ body {
 }
 
 .about-us {
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   padding: 90px 0;
-  background: #0e151d;
+  background: url('/assets/pexels-neo-2653362.jpg');
   font-family: 'VT323', monospace;
   color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 .pic{
   height: 500px;
   width:  600px;
@@ -135,6 +140,10 @@ body {
 
 .text {
   width: 540px;
+}
+
+.info-card {
+  background: #055160 !important;
 }
 
 .read-more {
@@ -283,7 +292,7 @@ span {
 
 .code {
   position: relative;
-  background: url('/assets/background.web.png');
+  background: linear-gradient(0deg, hsla(203, 53%, 13%, 1) 0%, hsla(144, 37%, 15%, 1) 51%, hsla(203, 53%, 13%, 1) 100%);
   z-index: 999;
 }
 
@@ -13219,10 +13228,10 @@ fieldset:disabled .btn {
 Navbar
 */
 
-.navbar-scrolled {
-  background-color: hsl(0deg 0% 13.39%);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
+  /* .navbar-scrolled {
+    background-color: #183423;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  } */
 
 
 .banner {
@@ -13250,7 +13259,7 @@ Navbar
 }
 
 .tech {
-  background: #0e151d;
+  background: linear-gradient(0deg, hsla(203, 53%, 13%, 1) 0%, hsla(144, 37%, 15%, 1) 51%, hsla(203, 53%, 13%, 1) 100%);
   color: #fff;
 }
 
