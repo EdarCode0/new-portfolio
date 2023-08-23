@@ -90,25 +90,34 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+@font-face {
+  font-family: 'Graphik';
+  src: url('/assets/fonts/GraphikRegular.otf') format('otf'),
+}
 
 body {
   /* font-family: "Montserrat" sans-serif; */
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
 
 }
 
 .navbar {
   /* font-family: "Montserrat" sans-serif; */
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   transition: all 0.5s;
+  /* height: 20vh !important; */
 }
 
 .navbar-brand {
   color: #fff !important;
   /* font-family: "Montserrat", sans-serif !important; */
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   /* font-weight: 400 !important; */
   font-size: 25px;
+}
+
+.logo {
+  height: 150px;
 }
 
 #header-page {
@@ -126,16 +135,24 @@ body {
   width: 100%;
   padding: 90px 0;
   background: url('/assets/pexels-neo-2653362.jpg');
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.pic{
+.testimonials-card {
+  background: #AAE979 !important;
+}
+
+.bi-check {
+  color: #6f42c1 !important;
+}
+
+.pic {
   height: 500px;
-  width:  600px;
+  width: 600px;
 }
 
 .text {
@@ -143,15 +160,36 @@ body {
 }
 
 .info-card {
-  background: #055160 !important;
+  background: #AAE979 !important;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .read-more {
   background: #AAE979 !important;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .read-more:hover {
   background: transparent !important;
+}
+
+.read-more-arrow {
+  color: #000;
+  text-decoration: none;
+}
+
+.read-more-arrow:hover {
+  color: rgb(184, 48, 184);
 }
 
 .text h2 {
@@ -166,9 +204,9 @@ body {
   margin-bottom: 20px;
 }
 
-span {
+/* span {
   color: #AAE979;
-}
+} */
 
 .text p {
   font-size: 18px;
@@ -201,7 +239,7 @@ span {
 }
 
 .testimonials-title {
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-size: 40px;
   color: #fff;
 }
@@ -211,7 +249,7 @@ span {
 }
 
 .contact-title {
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-size: 40px;
 }
 
@@ -223,7 +261,7 @@ span {
 .nav-link {
   color: #fff !important;
   /* font-family: "Montserrat", sans-serif !important; */
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-weight: 400 !important;
 }
 
@@ -276,7 +314,7 @@ span {
   font-weight: 400;
   opacity: 0;
   animation: charge .5s forwards;
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
 }
 
 .text {
@@ -287,7 +325,7 @@ span {
   color: rgba(255, 255, 255, .9);
   opacity: 0;
   animation: charge .5s .3s forwards;
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
 }
 
 .code {
@@ -298,7 +336,7 @@ span {
 
 .ripple {
   background-position: center;
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-weight: 600;
   font-size: 200px;
   transition: background 0.8s;
@@ -308,7 +346,7 @@ span {
 
 .ripple-contact {
   background-position: center;
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-weight: 200;
   /* font-size: 200px; */
   transition: background 0.8s;
@@ -350,7 +388,7 @@ h3 .ripple-contact {
   text-decoration: none;
   color: #fff;
   font-weight: 800;
-  /* font-family: 'VT323', monospace; */
+  /* font-family: 'Graphik', sans-serif; */
 }
 
 .navbar-toggler-icon {
@@ -367,7 +405,7 @@ hr.solid {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* font-family: 'VT323', monospace; */
+  /* font-family: 'Graphik', sans-serif; */
 
 }
 
@@ -424,7 +462,7 @@ body.modal-open .background-container {
   flex-direction: column;
   color: #fff;
   font-size: 18px;
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-size: 28px;
   /* margin-left: 150px !important; */
 }
@@ -503,7 +541,10 @@ body.modal-open .background-container {
 }
 
 .reviews {
-  background-color: hsl(0, 1%, 7%);
+  background: url('https://www.commbox.io/wp-content/uploads/2019/10/11-1-1024x600.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
@@ -4816,14 +4857,18 @@ fieldset:disabled .btn {
 
 
 .services {
-  /* font-family: 'VT323', monospace; */
+  font-family: 'Graphik', sans-serif !important;
+  background: rgb(16, 38, 52) !important;
 }
 
 .services-title {
   font-size: 45px;
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
 }
 
+.card-service {
+  background-color: #AAE979 !important;
+}
 
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -7571,6 +7616,11 @@ fieldset:disabled .btn {
     background-clip: padding-box;
     outline: 0;
     transition: transform 0.3s ease-in-out;
+  }
+
+  .logo-img {
+    height: 25px;
+    width: 125px;
   }
 
   .rounded-start {
@@ -13222,13 +13272,20 @@ fieldset:disabled .btn {
   height: 4rem;
   width: 4rem;
   font-size: 2rem;
+  background-color: #6f42c1;
+}
+
+#submitButton {
+  background: #AAE979;
+  border-color: #fff;
+  color: #000;
 }
 
 /*!
 Navbar
 */
 
-  /* .navbar-scrolled {
+/* .navbar-scrolled {
     background-color: #183423;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   } */
@@ -13253,14 +13310,18 @@ Navbar
 }
 
 .team {
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   font-size: 45px;
   padding-bottom: 50px;
 }
 
 .tech {
-  background: linear-gradient(0deg, hsla(203, 53%, 13%, 1) 0%, hsla(144, 37%, 15%, 1) 51%, hsla(203, 53%, 13%, 1) 100%);
+  background: #fff;
   color: #fff;
+}
+
+.btn-arrow {
+  font-weight: 600;
 }
 
 .tech-title {
@@ -13282,7 +13343,7 @@ Navbar
 .about-section {
   color: #ddd;
   /* background-color: #474e5d; */
-  font-family: 'VT323', monospace;
+  font-family: 'Graphik', sans-serif;
   margin-bottom: 50px;
   background: hsl(0deg 0% 13.39%);
   padding: 50px;
@@ -13401,3 +13462,52 @@ Navbar
   }
 }
 
+.counter {
+  background-color: transparent;
+  text-align: center;
+}
+
+.employees,
+.customer,
+.design,
+.order {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.counter-count {
+  font-size: 18px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  line-height: 92px;
+  width: 92px;
+  height: 92px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+}
+
+.employee-p,
+.customer-p,
+.order-p,
+.design-p {
+  font-size: 24px;
+  color: #000000;
+  line-height: 34px;
+}
+
+.smooth-transition {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.smooth-transition.show {
+  opacity: 1;
+  transform: translateY(0);
+}
