@@ -57,18 +57,31 @@ $(window).on('scroll', function () {
   }
 });
 
-
 $(document).ready(function() {
   $(window).scroll(function() {
-      // Get the position of the tech section
-      const techSectionPosition = $('#technologies').offset().top;
-      
-      // Get the current scroll position
+      const aboutSectionPosition = $('#about').offset().top;
       const scrollPosition = $(window).scrollTop() + $(window).height();
       
-      // Check if the tech section is in the viewport
-      if (scrollPosition > techSectionPosition) {
-          $('.info-card').addClass('smooth-transition show');
+      if (scrollPosition > aboutSectionPosition) {
+          // Add the animation classes only if scrolling down to the section
+          $('.read-more').addClass('animate');
+          $('.about-title, .desc-about').addClass('animate');
+      } else {
+          // Remove the animation classes if scrolling above the section
+          $('.read-more').removeClass('animate');
+          $('.about-title, .desc-about').removeClass('animate');
       }
   });
 });
+
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        const techSectionPosition = $('#technologies').offset().top;
+        const scrollPosition = $(window).scrollTop() + $(window).height();
+        
+        if (scrollPosition > techSectionPosition) {
+            $('.info-card').addClass('smooth-transition show');
+        }
+    });
+  });
+
